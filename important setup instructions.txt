@@ -1,0 +1,9 @@
+download ffmpeg for windows (attached in same directory).
+extract and move to specific path, rename to ffmpeg,  and add the bin (containing .exe) path to system variables
+open terminal , and type fffmpeg to make sure it is added to path.
+download imagemagic for windows and install.
+go to  virtual_env\Lib\site-packages\moviepy/config_defaults.py
+and comment below line:
+# IMAGEMAGICK_BINARY = os.getenv('IMAGEMAGICK_BINARY', 'auto-detect')
+then add:
+IMAGEMAGICK_BINARY = os.getenv ('IMAGEMAGICK_BINARY', r'C:\Program Files\ImageMagick-7.0.10-Q16\magick.exe')
